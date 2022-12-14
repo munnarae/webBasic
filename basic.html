@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    .heading1, .heading2 {
+      font-size: 30px;
+      color: blue;
+      font-weight: 700;
+      background-color: yellow;
+    }
+
+      .para1, .para2 {
+        font-size: 18px;
+        color: green;
+        background-color: pink;
+      }
+    /* h1와 p의 width 기초값은 auto 이다. */
+    /* 블록요소의 종류 div, h1, p, section */
+    /* 인라인 요소의 종류 span, img */
+
+    /* 블록요소안에는 블록요소를 쓸 수 없다. ex) h1제목안에 div가 못들어감
+    기본적으로 블록안에는 블록이 올수는 없지만 있는 경우도 있다.
+    div안에 div가 들어갈 수 있거나 혹은 section안에 h1이 들어간다거나.,, 
+    section안에 header나 footer를 쓸수 있다.
+    article안에도 header나 footer를 쓸수 있다. */
+
+    /* 블록요소 안에는 인라인요소를 포함가능하다 ex) h1안에 a  */
+
+    /* h1을 여러번 써도 상관은 없다. 그러나 주로 로고나 대제목에 들어가거나 하기때문에 
+       나머진 h2나 h3 쓰는게 좋을듯?  */
+
+  </style>
+</head>
+<body>
+  <h1 class="heading1">제목입니다</h1>
+  <p class="para1">본문입니다</p>
+
+  <hr />
+
+  <div class="heading2">제목입니다.</div>
+  <div class="para2">본문입니다.</div>
+
+  <hr />
+  <form action="">
+    <fieldset>
+      <legend>....</legend>
+      <div>
+        <label for="userId">아이디</label> <input type="text" id="userId" />
+      </div>
+      <div>
+        <label for="userPw">비밀번호</label> <input type="password" id="userPw" />
+      </div>
+      <div>
+        성별<br />
+        <label for="userGenderMan">남자</label> <input type="radio" name="gender" id="userGenderMan" />
+        <label for="userGenderWoman">여자</label> <input type="radio" name="gender" id="userGenderWoman" />
+      </div>
+    </fieldset>
+  </form>
+</body>
+</html>
