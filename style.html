@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>스타일 적용 방법 3가지</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <style>
+    body {
+      font-size: 48px;
+    }
+    h1 {
+      background-color: pink;
+      font-size: 20px;
+    }
+    
+    </style>
+  <!-- 여기 있던 링크태그를 <style>위로 올리면 우선순위는 밑에있는 h1인게 먼저가 됨 -->
+</head>
+<body class="note" style="background-color: gold;">
+  <h1 class="heading">여기는 제목입니다.</h1>
+  <p>여기는 본문입니다.</p>
+  <!-- 태그안에 style을 넣는 인라인방법이 제일 우선순위지만 가급적이면 추천하지 않음 -->
+</body>
+</html>
