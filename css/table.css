@@ -3,6 +3,7 @@ table {
   border-collapse: collapse;
 }
 
+/* 테이블 헤드와 테이블 데이타에 테두리 삽입 */
 th,
 td {
   border: 1px solid blue;
